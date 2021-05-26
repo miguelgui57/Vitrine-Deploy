@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  min-height: 100vh;
+  background-color: white;
+  background-image:url('bg.jpg');
+  background-size: cover;
+  background-position: center; 
+  font-family: cursive;
+}
+
+.title{
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+}
+
+.subtitle{
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+div{
+  background-color: #03071e;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 7px 7px 7px 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.card{
+  width: 500px;
+  max-width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0 3px 0 #222;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.card form{
+  display: flex;
+  align-items: center;
+}
+
+input{
+  border-radius: 10px;
+  padding: 5px 10px;  
+  border: 1px solid #222;
+  margin-right: 10px;
+}
+
+input:focus{
+  outline: none;
+}
+
+form button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.auth-container{
+  width: 350px;
+  min-height: 250px;
+  background-color: #ced4da;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: cneter;
+  justify-content: space-evenly;
+  box-shadow: 0 0 3px 0 ;
+  color: #777:
+}
+
+.auth-container form{
+  max-width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.auth-container input{
+  margin: 0;
+}
+
+.btn{
+  border: none;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%
+}
+
+.btn:hover {
+  box-shadow: 0 0 3px #222;
+}
+
+.bg.blue{
+  background-color: #489fb5;
+}
+
+.text-blue{
+  color: #489fb5;
+}

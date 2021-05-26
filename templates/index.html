@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina Inicial</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+
+</head>
+<body>
+    <div>
+      <span class="title"> STEET 2K </span>
+          <form action="/create"method="POST">
+            <span class="subtitle"> Digite um Produto e valor: </span><br>
+              <input name="title" placeholder="Produto">
+              <input name="price" placeholder="Valor">
+                <button type="submit"> ➕ </button>
+          </form> 
+    </div> 
+
+  <ul class="content">
+    {% for todo in products %}
+      <li class="card">    
+        <form action="/update/{{ loop.index0 }}" method="POST">
+            <input 
+              name = "title"
+              value="{{ todo['title']}}"
+            >
+            <input 
+            name = "price"
+            value=" R${{ todo['price']}}"
+            >
+          <button type="submit">✏️</button>   
+        </form>     
+
+          <form class="actions">                 
+            <a href="/delete/{{ loop.index0 }}">❌</a>  
+          </form>  
+          
+      </li>
+    {% endfor %}
+  </ul>  
+</body>
+</html>
